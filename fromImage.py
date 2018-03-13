@@ -8,7 +8,7 @@ def showPreview(preview):
   preview.show()
 
 def genPreview(scheme, img=None):
-  color_boxes = [Image.new("RGB", (64,64), tuple(round(v*255) for v in color.rgb)) 
+  color_boxes = [Image.new("RGB", (64,64), tuple(round(v*255) for v in color.rgb))
                   for color in scheme]
   width = 64*len(scheme)
   scheme_preview=Image.new('RGB', (width, 64))
@@ -45,12 +45,12 @@ def genScheme(palette):
   return luminance_gradient
 
 if(__name__ == '__main__'):
-  folder_path = '/home/lvncelot/Pictures/wal/'
+  folder_path = '/home/tibor/Pictures/Wallpaper/'
 
   img_names = os.listdir(folder_path)
 
   img_name = img_names[0]
-#img_name = random.choice(img_names)
+  img_name = random.choice(img_names)
 
   img = Image.open(folder_path+img_name)
 
