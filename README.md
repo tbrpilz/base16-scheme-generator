@@ -1,3 +1,3 @@
-# base16-scheme-generator
+# base16-scheme-generator (WIP)
 
-Generator for base16 (WIP)
+Base 16 Color scheme generation
